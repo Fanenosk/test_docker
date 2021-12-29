@@ -1,0 +1,7 @@
+poetry init
+poetry add
+docker build . --tag docker1
+docker run --publish 5000:5000 docker1
+
+docker build . --tag docker2
+docker run --publish 5001:5001 docker2
